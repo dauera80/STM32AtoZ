@@ -1,0 +1,11 @@
+# metadata data
+.metadata/
+
+# debug folder
+*/debug/
+
+# setting folder
+*/.settings/
+
+#RTOS project
+FREERTOS/
