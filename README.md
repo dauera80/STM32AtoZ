@@ -4,12 +4,12 @@
 
 # 개발 환경 및 실습 보드
 |IDE             |Target board         |External board        |FW version     |
-|----------------|---------------------|----------------------|---------------|
-|[STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html)|[NUCLEO64](https://www.devicemart.co.kr/goods/view?no=1346033)|[NUCLEOEVB](https://www.devicemart.co.kr/goods/view?no=12545343)|F1_V1.8.0
+|:--------------:|:-------------------:|:--------------------:|:-------------:|
+|<center>[STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html)</center>|<center>[NUCLEO64](https://www.devicemart.co.kr/goods/view?no=1346033)</center>|<center>[NUCLEOEVB](https://www.devicemart.co.kr/goods/view?no=12545343)</center>|F1_V1.8.0
 |<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGhTJJ8gbDkFXe_0Md4uHzcOrr558cVxnCbw&usqp=CAU" border="0" width="200">|<img src="https://user-images.githubusercontent.com/67400790/86118039-0cae3800-bb0b-11ea-85ba-a246ab6d0b4b.png" border="0" width="100">|<img src="https://user-images.githubusercontent.com/67400790/86117881-c953c980-bb0a-11ea-8c28-f9621f89737b.jpg" border="0" width="200">
-
+  
 * NUCLEO64 및 NUCELOEVB 보드 이미지
-![NUCLEOEVB_NUCLEO](https://user-images.githubusercontent.com/67400790/86118831-6105e780-bb0c-11ea-80d1-72107f9bb4ff.jpg)
+<img src="https://user-images.githubusercontent.com/67400790/86118831-6105e780-bb0c-11ea-80d1-72107f9bb4ff.jpg" border="0" width="80%">  
 
 # 목차
 **1. STM32 요약**  
@@ -59,6 +59,6 @@
 
 5.7. CLCD [[예제]](https://github.com/dauera80/stm32atoz/tree/master/CLCD)  
 5.8. Application  
->5.8.1 Demo1 [예제]  
+>5.8.1 Demo1 [[예제]](https://github.com/dauera80/stm32atoz/tree/master/Demo1)  
 >5.8.2 Demo2 [예제]  
 
