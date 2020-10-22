@@ -269,16 +269,18 @@ InitHM10 (void)
        */
       SendATCommand ("AT+RENEW", rcvBuf, sizeof(rcvBuf), 1000);
       printf ("AT Renew: %s\n", rcvBuf);
+      HAL_Delay(1000);
 
       // set Name NUCLEOEVB
       SendATCommand ("AT+NAMENUCLEOEVB", rcvBuf, sizeof(rcvBuf), 100);
 
       // HM-10's SW reset to apply the changed settings
-      SendATCommand ("AT+RESET?", rcvBuf, sizeof(rcvBuf), 500);
+      SendATCommand ("AT+RESET", rcvBuf, sizeof(rcvBuf), 500);
       printf ("AT Reset: %s\n", rcvBuf);
+      HAL_Delay(1000);
     }
-  else
-    printf ("Show HM-10 settings\n");
+
+  printf ("Show HM-10 settings\n");
 
   // get addr
   SendATCommand ("AT+ADDR?", rcvBuf, sizeof(rcvBuf), 100);
