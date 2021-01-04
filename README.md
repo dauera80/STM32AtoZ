@@ -1,6 +1,6 @@
 # STM32CubeIDE를 이용한 STM32 따라하기
-이 깃허브는 [STM32CubeIDE를 이용한 STM32 따라하기](http://www.yes24.com/Product/Goods/90611902?Acode=101)에 포함된 실습 코드를 담고 있습니다.
-<a href="http://www.yes24.com/Product/Goods/90611902?Acode=101"><img src="https://image.yes24.com/goods/90611902/800x0" border="0" width="70%"></a>
+이 깃허브는 [STM32CubeIDE를 이용한 STM32 따라하기](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791165392659&orderClick=LEa&Kc=)에 포함된 실습 코드를 담고 있습니다.
+<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791165392659&orderClick=LEa&Kc="><img src="https://image.yes24.com/goods/90611902/800x0" border="0" width="70%"></a>
 
 # 개발 환경 및 실습 보드
 |IDE             |Target board         |External board        |FW version     |
@@ -9,8 +9,8 @@
 |<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGhTJJ8gbDkFXe_0Md4uHzcOrr558cVxnCbw&usqp=CAU" border="0" width="200">|<img src="https://user-images.githubusercontent.com/67400790/86118039-0cae3800-bb0b-11ea-85ba-a246ab6d0b4b.png" border="0" width="100">|<img src="https://user-images.githubusercontent.com/67400790/86117881-c953c980-bb0a-11ea-8c28-f9621f89737b.jpg" border="0" width="200">
   
 * NUCLEO64 및 NUCELOEVB 보드 이미지
-<img src="https://user-images.githubusercontent.com/67400790/86118831-6105e780-bb0c-11ea-80d1-72107f9bb4ff.jpg" border="0" width="80%">  
-
+<img src="https://user-images.githubusercontent.com/67400790/86118831-6105e780-bb0c-11ea-80d1-72107f9bb4ff.jpg" border="0" width="85%">  
+  
 # 목차
 **1. STM32 요약**  
 1.1. STMicroelectronics STM32 현황  
@@ -61,4 +61,11 @@
 5.8. Application  
 >5.8.1 Demo1 [[예제]](https://github.com/dauera80/stm32atoz/tree/master/Demo1)  
 >5.8.2 Demo2 [[예제]](https://github.com/dauera80/stm32atoz/tree/master/Demo2)  
+
+**6. 번외**  
+6.1. RTC  
+>6.1.1 RTC [[예제]](https://github.com/dauera80/stm32atoz/tree/master/RTC)  
+>6.1.2 RTC_VBAT [[예제]](https://github.com/dauera80/stm32atoz/tree/master/RTC_VBAT)  
+>6.1.3 RTC_VBAT_F411 [[예제]](https://github.com/dauera80/stm32atoz/tree/master/RTC_VBAT_F411)  
+
 
