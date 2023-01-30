@@ -372,6 +372,7 @@ int main(void)
 
   /* Init HDC1080 */
   // HDC1080 id read to I2C
+  HAL_Delay(50);
   hdc1080_read_reg (&hi2c1, HDC1080_ID_DEV, &I2C_id);
   hdc1080_init (&hi2c1, HDC1080_T_RES_14, HDC1080_RH_RES_14, 1, &bat_stat);
   printf ("I2C Initialization Done!");

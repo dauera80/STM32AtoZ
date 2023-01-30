@@ -124,6 +124,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  // I2C Init Delay
+  HAL_Delay(100);
 
   // chip id read
 #if 1

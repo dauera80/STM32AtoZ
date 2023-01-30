@@ -25,8 +25,8 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>    // for using printf()
 #include <stdlib.h>   // for using atoi()
-#include <hdc1080\hdc1080.h>
-#include <clcd\clcd.h>
+#include "hdc1080\hdc1080.h"
+#include "clcd\clcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -135,7 +135,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
   uint8_t hdc_humi, bat_stat;
   uint16_t I2C_id;
-  float hdc_temp, tca_temp;
+  float hdc_temp, tc_temp;
   char sBuf[17]  =  { 0 };
   char rgb[3][4] =  { 0 };
   int servo_pulse = 0, count = 0;
@@ -179,7 +179,7 @@ int main(void)
    *
    * ADC Rank1 - VAR,
    *     Rank2 - CDS,
-   *     Rank3 - TCA1047
+   *     Rank3 - TC1047
    */
   if (HAL_ADC_Start_DMA (&hadc1, (uint32_t*) &gADCxConvertedValue, 3) != HAL_OK)
     {
@@ -188,6 +188,7 @@ int main(void)
   printf ("Start ADC in DMA Mode\n");
 
   /* HDC1080 id read to I2C */
+  HAL_Delay(50);
   hdc1080_read_reg (&hi2c1, HDC1080_ID_DEV, &I2C_id);
   printf ("\nHDC1080's ID = %X\n", I2C_id);
 
@@ -212,6 +213,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  gTouchCnt = 0;
   printf ("\nDemo1 Start!!\n");
   printf ("Screen %d\n", gTouchCnt + 1);
   while (1)
@@ -230,12 +232,12 @@ int main(void)
           break;
 
         case 1: // Screen 2
-          /* convert TCA1047's raw data to temperature
+          /* convert TC1047's raw data to temperature
            *
            * Temp = (ADC value * 3.3 / 4096 * 1000 - 500) / 10
            */
-          tca_temp = (float) (((gADCxConvertedValue[2] * 3.3 / 4096 * 1000) - 500) / 10);
-          sprintf (sBuf, "TCA1047: %7.2f", tca_temp);
+          tc_temp = (float) (((gADCxConvertedValue[2] * 3.3 / 4096 * 1000) - 500) / 10);
+          sprintf (sBuf, "TC1047: %7.2f", tc_temp);
           CLCD_Puts (0, 0, sBuf);
 
           /* measure HDC1080's temperature and humidity */
